@@ -23,7 +23,7 @@ void pop(sqqueue * s,int& val){
     val = s->data[s->front];
     s->front = (s->front + 1)% MAXSIZE;
 }
-//球队列长度
+//求队列长度
 int length(sqqueue * s){
     return (s->rear - s->front + MAXSIZE)%MAXSIZE;
 }
