@@ -3,6 +3,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+//展示交换过程
 void reverse_string(vector<char>& s){
     for(int i = 0,j = s.size()-1;i < s.size()/2;i++,j--)
     swap(s[i],s[j]);
@@ -15,6 +16,7 @@ int main()
         cout << s[i] << " ";
     }
     cout << endl;
+    //直接交换 --> 库 要包含#include<algorithm>
     reverse(s.begin(),s.end());
     for(char val:s)
     cout << val << " ";
